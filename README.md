@@ -554,38 +554,10 @@ text
 
 ---
 
-## 🤝 Como Contribuir
-
-Contribuições são sempre bem-vindas[web:8][web:10]! Siga os passos abaixo:
-
-1. **Fork** o projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/MinhaFeature`)
-3. **Commit** suas mudanças (`git commit -m 'feat: adiciona nova funcionalidade'`)
-4. **Push** para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um **Pull Request**
-
-### Diretrizes
-
-- Siga os padrões de código (ESLint/Prettier)
-- Escreva testes para novas funcionalidades
-- Atualize a documentação quando necessário
-- Use commits semânticos (Conventional Commits)
-
----
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes[web:7].
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ por **[Seu Nome]**
-
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Nome](https://linkedin.com/in/seu-perfil)
-- Email: seu.email@example.com
 
 ---
 
