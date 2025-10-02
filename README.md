@@ -1,4 +1,3 @@
-text
 <div align="center">
 
 # 🍽️ Prato Mágico
@@ -45,7 +44,6 @@ src/
 ├── domain/ # Entidades e Value Objects (lógica de domínio)
 └── infrastructure/ # Repositórios, DB e adaptadores externos
 
-text
 
 ### 🎨 Princípios SOLID Aplicados
 
@@ -105,7 +103,6 @@ git clone https://github.com/seu-usuario/prato-magico.git
 Entre no diretório
 cd prato-magico
 
-text
 
 ### 2️⃣ Configurar Variáveis de Ambiente
 
@@ -126,7 +123,7 @@ pgAdmin (opcional)
 PGADMIN_EMAIL=admin@admin.com
 PGADMIN_PASSWORD=admin
 
-text
+ 
 
 ### 3️⃣ Instalar Dependências
 
@@ -137,7 +134,7 @@ Frontend (se estiver em monorepo)
 cd frontend
 npm install
 
-text
+ 
 
 ### 4️⃣ Subir o Banco de Dados com Docker
 
@@ -147,7 +144,7 @@ docker-compose up -d
 Verificar se os containers estão rodando
 docker ps
 
-text
+
 
 **Acessar pgAdmin:**
 - URL: `http://localhost:5050`
@@ -159,7 +156,7 @@ text
 Cria as tabelas no banco de dados
 npm run migration:run
 
-text
+
 
 ### 6️⃣ Iniciar o Servidor
 
@@ -170,7 +167,7 @@ Ambiente de produção
 npm run build
 npm start
 
-text
+
 
 O servidor estará disponível em `http://localhost:3000`[web:10].
 
@@ -214,7 +211,7 @@ curl -X POST http://localhost:3000/api/v1/dishes
 "category": "prato principal"
 }'
 
-text
+
 
 ---
 
@@ -253,7 +250,7 @@ depends_on:
 volumes:
 postgres_data:
 
-text
+
 
 ### Comandos Úteis do Docker
 
@@ -275,7 +272,7 @@ docker-compose build --no-cache
 Acessar o terminal do PostgreSQL
 docker exec -it prato_magico_db psql -U postgres -d prato_magico
 
-text
+
 
 ### Conectar ao PostgreSQL no pgAdmin
 
@@ -324,7 +321,7 @@ git commit -m "feat: adiciona filtro de pratos por categoria"
 Push para o repositório
 git push origin feature/nome-da-feature
 
-text
+
 
 #### 2. Finalizar Feature
 
@@ -343,7 +340,7 @@ git branch -d feature/nome-da-feature
 Deletar branch remota
 git push origin --delete feature/nome-da-feature
 
-text
+
 
 #### 3. Criar Release
 
@@ -368,7 +365,7 @@ Push
 git push origin main develop --tags
 git branch -d release/v1.2.0
 
-text
+
 
 #### 4. Hotfix em Produção
 
@@ -391,7 +388,7 @@ Push
 git push origin main develop --tags
 git branch -d hotfix/fix-critical-bug
 
-text
+
 
 ### Convenção de Commits
 
@@ -403,7 +400,6 @@ Seguimos o padrão **[Conventional Commits](https://www.conventionalcommits.org/
 
 [rodapé opcional]
 
-text
 
 **Tipos principais:**
 - `feat`: Nova funcionalidade
@@ -421,7 +417,7 @@ git commit -m "fix(dishes): corrige validação de preço negativo"
 git commit -m "docs(readme): atualiza instruções de instalação"
 git commit -m "refactor(services): aplica princípio DIP em OrderService"
 
-text
+
 
 ---
 
@@ -442,7 +438,7 @@ text
 │ updated_at │
 └─────────────────┘
 
-text
+
 
 ### Tabelas
 
@@ -494,7 +490,7 @@ npm run test:watch
 Testes de integração
 npm run test:integration
 
-text
+
 
 ### Estrutura de Testes
 
@@ -503,7 +499,7 @@ tests/
 ├── integration/ # Testes de API end-to-end
 └── mocks/ # Mocks e fixtures
 
-text
+
 
 ---
 
@@ -517,13 +513,13 @@ text
 | Secundária | `#004E89` | Navegação, headers |
 | Sucesso | `#06D6A0` | Confirmações |
 | Erro | `#EF476F` | Alertas, validações |
-| Neutro Escuro | `#2B2D42` | Textos principais |
+| Neutro Escuro | `#2B2D42` |  os principais |
 | Neutro Claro | `#F7F7F7` | Backgrounds |
 
 ### Tipografia
 
 - **Primary**: Inter (títulos e interface)
-- **Secondary**: Roboto (corpo de texto)
+- **Secondary**: Roboto (corpo de  o)
 
 ---
 
@@ -537,7 +533,7 @@ npm run build
 Iniciar em produção
 NODE_ENV=production npm start
 
-text
+
 
 ### Frontend (React)
 
@@ -545,7 +541,7 @@ Build otimizado
 npm run build
 
 Arquivos gerados em /dist ou /build
-text
+
 
 **Plataformas recomendadas:**
 - Backend: Railway, Render, Fly.io, AWS
